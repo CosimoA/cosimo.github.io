@@ -3,12 +3,493 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+
+    <!-- animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- icons -->
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Skils-Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <title>CosimoArchip</title>
 </head>
 
 <body>
-    <h1>Hello!</h1>
+
+    <div class="header-links rounded-5">
+        <div class="h-100 w-100">
+            <nav class="navigation" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-offset="-10"
+                data-aos-delay="700">
+                <ul class="m-0 p-0 d-flex justify-content-center align-items-center">
+                    <li class="text-center p-2">
+                        <a title="home" class="link-page" href="#home"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="text-center p-2">
+                        <a title="about me" class="link-page" href="#about-me"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li class="text-center p-2">
+                        <a title="skills" class="link-page" href="#skills"><i class="fa-solid fa-laptop-code"></i></a>
+                    </li>
+                    <li class="text-center p-2">
+                        <a title="progetti" class="link-page" href="#projects"><i
+                                class="fa-regular fa-folder-open"></i></a>
+                    </li>
+                    <li class="text-center p-2">
+                        <a title="contatti" class="link-page" href="#contact-me"><i
+                                class="fa-regular fa-paper-plane"></i></a>
+                    </li>
+                    <li class="text-center p-2 dark-mode" title="change theme">
+                        <a title="cambia tema" class="link-page"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- INIZIO header -->
+    <header class="position-relative" id="home">
+        <!-- jumbotron -->
+        <section id="jumbotron" class="position-relative">
+            <div class="position-fixed w-100 top-50 start-50 translate-middle">
+                <div class="jumbo-content text-center d-flex align-items-center justify-content-center">
+                    <div class="my-name" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0"
+                        data-aos-delay="300">
+                        <h1 class="m-0">Cosimo Archip</h1>
+                        <h2 class="m-0">Web Developer</h2>
+
+                        <div class="socials-jumbo">
+                            <ul class="mt-4 p-0 position-relative">
+                                <!-- GitHub -->
+                                <li class="d-inline-block mx-1">
+                                    <a class="social m-0 rounded-circle align-center" href="https://github.com/CosimoA"
+                                        target="_blank" rel="noopener" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </li>
+                                <!-- Linkedin -->
+                                <li class="d-inline-block mx-1">
+                                    <a class="social m-0 rounded-circle align-center"
+                                        href="https://linkedin.com/in/cosimoarchi" target="_blank" rel="noopener"
+                                        title="LinkedIn">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
+                        <img class="photo-jumbo rounded-circle object-fit-cover" src="img/Profile.jpg"
+                            alt="Cosimo Archip">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- FINE header -->
+
+    <!-- INIZIO main -->
+    <main class="position-relative">
+        <div class="position-relative h-100 w-100">
+
+            <!-- freccia -->
+            <div class="direction fs-1 position-relative">
+                <a href="#about-me" class="arrow position-absolute position-absolute start-50 translate-middle mt-1"
+                    title="Go to About me">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+            </div>
+
+            <!-- sezione 1: about me -->
+            <section id="about-me" class="reveal">
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="text-center mb-5">ABOUT ME</h2>
+
+                <div class="container d-flex align-items-center">
+                    <div class="photo w-50 text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="cornice rounded-4 border-color change-border overflow-hidden">
+                            <img class="ph-img w-100 h-100" src="img/aboutMe.webp" alt="About Me">
+                        </div>
+                    </div>
+
+                    <div class="info-me w-50">
+                        <div class="mb-3 my-clouds my-experiences" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="w-50 p-3 text-center">
+                                <div class="rounded-4 change-border bg-card border-color bg-card py-3">
+                                    <p class="m-0"><i class="fa-solid fa-award"></i></p>
+                                    <p class="m-0"><strong>Esperienza</strong></p>
+                                    <p class="m-0">6+ mesi</p>
+                                    <p class="m-0">Jr Web Developer Trainee</p>
+                                </div>
+                            </div>
+
+                            <div class="w-50 p-3 text-center" data-aos="fade-up" data-aos-duration="900">
+                                <div class="rounded-4 change-border bg-card border-color bg-card py-3">
+                                    <p class="m-0"><i class="fa-solid fa-graduation-cap"></i></p>
+                                    <p class="m-0"><strong>Educazione</strong></p>
+                                    <p class="m-0">Boolean</p>
+                                    <p class="m-0">Full-Stack Web Development</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="fs-5" data-aos="fade-up" data-aos-duration="1000">
+                            Ciao, sono Cosimo, un Junior Web Developer con una passione manifestata fin dall'infanzia
+                            per la tecnologia. <br>
+                            Anche se il mio ruolo precedente non prevedeva lo sviluppo diretto, ho collaborato a stretto
+                            contatto con team tecnici per individuare i bug, ottimizzare i flussi e integrare nuove
+                            funzionalità suggerite dai clienti.
+                            <br>
+                            Questa esperienza mi ha fornito una solida comprensione dei principi di sviluppo web e delle
+                            migliori pratiche UX/UI, il che mi è venuto naturale fare un cambio di carriera per lavorare
+                            in un ambito che mi appassiona.
+                        </p>
+                    </div>
+                </div>
+                <!-- scarica CV -->
+                <div class="curriculum mt-5 text-center">
+                    <a href="file/Cosimo Archip CV.pdf" class="border-color bg-card px-3 py-2" target="_blank">
+                        Download CV
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- sezione 3: skills -->
+            <section id="skills" class="reveal">
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="text-center mb-3">SKILLS</h2>
+
+                <div class="container">
+                    <div class="row">
+                        <!-- Front-end Skills -->
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <div class="skill-card rounded-5 border-color bg-card change-border p-5">
+                                <h3 class="text-center"><i class="fa-solid fa-code"></i></h3>
+                                <h4 class="text-center mb-4">Front-end</h4>
+                                <ul class="list-unstyled text-left px-5">
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>HTML</strong> <i
+                                            class="devicon-html5-plain devicon colored float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>CSS</strong> <i
+                                            class="devicon-css3-plain devicon colored float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>Bootstrap</strong> <i
+                                            class="devicon-bootstrap-plain devicon colored float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>SASS</strong> <i
+                                            class="devicon-sass-original devicon colored float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>JavaScript</strong> <i
+                                            class="devicon-javascript-plain devicon colored float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>Vue.js</strong> <i
+                                            class="devicon-vuejs-plain devicon colored float-end"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Back-end Skills -->
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="skill-card rounded-5 border-color bg-card change-border p-5">
+                                <h3 class="text-center"><i class="fa-solid fa-database"></i></h3>
+                                <h4 class="text-center mb-4">Back-end</h4>
+                                <ul class="list-unstyled text-left px-5">
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>PHP</strong> <i class="devicon-php-plain devicon colored float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>Laravel</strong> <i
+                                            class="devicon-laravel-plain devicon colored float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>MySQL</strong> <i
+                                            class="devicon-mysql-plain devicon colored float-end"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Tools -->
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="skill-card rounded-5 border-color bg-card change-border p-5">
+                                <h3 class="text-center"><i class="fa-solid fa-laptop"></i></h3>
+                                <h4 class="text-center mb-4">Tools</h4>
+                                <ul class="list-unstyled text-left px-5">
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>VScode</strong> <i
+                                            class="devicon-vscode-plain colored devicon float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>MAMP</strong> <img class="devicon-img float-end" src="img/icon_mamp.png"
+                                            title="MAMP">
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>Postman</strong> <img class="devicon-img float-end"
+                                            src="img/icon_postman.svg" title="POSTMAN">
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>Git</strong> <i class="devicon-git-plain colored devicon float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>GitHub</strong> <i
+                                            class="devicon-github-original devicon float-end"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-2">
+                                        <strong>Microsoft</strong> <img class="devicon-img float-end"
+                                            src="img/icon_microsoft.png" title="Microsoft">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- sezione 4: projects -->
+            <section id="projects" class="reveal">
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="text-center mb-5">PROGETTI</h2>
+
+                <div class="container">
+                    <div class="row g-3 row-cols-1 row-cols-lg-2 justify-content-center">
+
+                        <div class="col mb-2 p-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="content-proj change-border border-color bg-card p-4 rounded-4">
+                                <h3 class="mb-3">Agency</h3>
+                                <div class="img-proj rounded-4" href="#collapseExample1" data-bs-toggle="collapse"> <img
+                                        src="img/agency.png" class="h-100 w-100" alt=""></div>
+                                <div class="buttons-proj mt-4">
+                                    <i class="fa-solid fa-angles-down"></i>
+                                </div>
+                                <div class="collapse" id="collapseExample1">
+                                    <div class="card bg-transparent card-body border-0">
+                                        <p class="m-0">
+                                            Creazione di un sito
+                                            web per un cliente, utilizzando un
+                                            insieme di tecnologie web tra
+                                            cui HTML5, CSS, JavaScript, Sass,
+                                            Vue.js e Vite.js. Durante il progetto,
+                                            ho creato un sito web con un design
+                                            moderno e accattivante, caratterizzato
+                                            da una navigazione intuitiva e facile da
+                                            usare. Inoltre, ho utilizzato Vue.js e
+                                            Vite.js per garantire una rapida
+                                            velocità di caricamento della pagina e
+                                            una migliore esperienza utente.
+                                        </p>
+                                    </div>
+                                    <div class="buttons-proj mt-4">
+                                        <a class="d-inline-block mx-2 p-2 mini-git border-color bg-card"
+                                            href="https://github.com/CosimoA/proj-html-vuejs" target="_blank"
+                                            rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-2 p-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="content-proj change-border border-color bg-card p-4 rounded-4">
+                                <h3 class="mb-3">Netflix</h3>
+                                <div class="img-proj rounded-4" href="#collapseExample3" data-bs-toggle="collapse"> <img
+                                        src="img/boolflix.png" class="h-100 w-100" alt=""></div>
+                                <div class="buttons-proj mt-4">
+                                    <i class="fa-solid fa-angles-down"></i>
+                                </div>
+                                <div class="collapse" id="collapseExample3">
+                                    <div class="card bg-transparent card-body border-0">
+                                        <p class="m-0">
+                                            Creazione di
+                                            una piattaforma di streaming video
+                                            simile a Netflix, concentrandoci
+                                            sull'utilizzo di chiamate Axios per
+                                            recuperare i dati dei film e serie-tv dal server
+                                            remoto. Ho
+                                            utilizzato tecnologie come
+                                            HTML5, CSS, JavaScript, Axios, Vue.js
+                                            per creare una piattaforma
+                                            reattiva, scalabile e sicura.
+                                        </p>
+                                    </div>
+                                    <div class="buttons-proj mt-4">
+                                        <a class="d-inline-block mx-2 p-2 mini-git border-color bg-card"
+                                            href="https://github.com/CosimoA/vite-boolflix" target="_blank"
+                                            rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-2 p-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="content-proj change-border border-color bg-card p-4 rounded-4">
+                                <h3 class="mb-3">WhatsApp</h3>
+                                <div class="img-proj rounded-4" href="#collapseExample4" data-bs-toggle="collapse"> <img
+                                        src="img/whatsapp.png" class="h-100 w-100" alt=""></div>
+                                <div class="buttons-proj mt-4">
+                                    <i class="fa-solid fa-angles-down"></i>
+                                </div>
+                                <div class="collapse" id="collapseExample4">
+                                    <div class="card bg-transparent card-body border-0">
+                                        <p class="m-0">
+                                            Replica
+                                            di WhatsApp web utilizzando HTML5,
+                                            CSS3, JavaScript e VueJs. Durante il progetto, ho creato
+                                            un sito web interattivo e reattivo, con
+                                            un design funzionale. Ho
+                                            utilizzato CSS per
+                                            avere il totale controllo del layout del
+                                            sito e garantire una maggiore coerenza
+                                            tra le pagine. Inoltre, ho utilizzato
+                                            Vue.js per gestire in modo efficiente lo
+                                            stato dell'applicazione e fornire una
+                                            migliore esperienza utente.
+                                        </p>
+                                    </div>
+                                    <div class="buttons-proj mt-4">
+                                        <a class="d-inline-block mx-2 p-2 mini-git border-color bg-card"
+                                            href="https://github.com/CosimoA/vue-boolzapp" target="_blank"
+                                            rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-2 p-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="content-proj change-border border-color bg-card p-4 rounded-4">
+                                <h3 class="mb-3">Spotify</h3>
+                                <div class="img-proj rounded-4" href="#collapseExample5" data-bs-toggle="collapse"> <img
+                                        src="img/spotify.png" class="h-100 w-100" alt=""></div>
+                                <div class="buttons-proj mt-4">
+                                    <i class="fa-solid fa-angles-down"></i>
+                                </div>
+                                <div class="collapse" id="collapseExample5">
+                                    <div class="card bg-transparent card-body border-0">
+                                        <p class="m-0">
+                                            Replicato il
+                                            sito web di Spotify utilizzando HTML5 e
+                                            CSS3, con particolare attenzione alla
+                                            progettazione di una versione responsive
+                                            per desktop, tablet e mobile utilizzando le media
+                                            queries e grid layout per garantire un
+                                            layout fluido e facile da usare su
+                                            schermi di diverse dimensioni.
+                                        </p>
+                                    </div>
+                                    <div class="buttons-proj mt-4">
+                                        <a class="d-inline-block mx-2 p-2 mini-git border-color bg-card"
+                                            href="https://github.com/CosimoA/html-css-spotifyweb" target="_blank"
+                                            rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="git h-100 w-100 text-center mt-5">
+                    <a href="https://github.com/CosimoA?tab=repositories" target="_blank" rel="noopener"
+                        class="border-color bg-card px-3 py-2">Tutti i progetti</a>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- sezione 5: contact me -->
+        <section id="contact-me" class="position-relative">
+            <h2 class="text-center mb-4" data-aos="fade-up" data-aos-duration="1000">CONTATTI</h2>
+
+            <div class="text-center pb-5">
+                <div class="border-color bg-card rounded-5 d-inline-block p-3" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <p class="d-inline-block me-3 mb-0"><a href="mailto:cosimo.archip@gmail.com" target="_blank"
+                            class="footer-link"><i class="fa-solid fa-envelope pe-1"></i> cosimo.archip@gmail.com</a>
+                    </p>
+                    <p class="d-inline-block mb-0"><a href="https://linkedin.com/in/cosimoarchi" target="_blank"
+                            rel="noopener" title="LinkedIn" class="footer-link"><i
+                                class="fa-brands fa-linkedin pe-1"></i> Linkedin</a></p>
+                </div>
+            </div>
+
+            <ul class="m-0 p-0 text-center mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <li class="d-inline-block mx-4 mb-4">
+                    <a class="footer-link text-uppercase" href="#jumbotron">home</a>
+                </li>
+                <li class="d-inline-block mx-4 mb-4">
+                    <a class="footer-link text-uppercase" href="#about-me">about me</a>
+                </li>
+                <li class="d-inline-block mx-4 mb-4">
+                    <a class="footer-link text-uppercase" href="#skills">skills</a>
+                </li>
+                <li class="d-inline-block mx-4 mb-4">
+                    <a class="footer-link text-uppercase" href="#projects">progetti</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- FINE main -->
+
+    <!-- INIZIO footer -->
+    <footer class="position-relative">
+        <div class="container d-flex justify-content-between align-items-center p-4">
+            <!-- firma -->
+            <div class="signature">
+                <p class="m-0 footer-text">
+                    &copy; 2024 Cosimo Archip, All Rights Reserved
+                </p>
+            </div>
+
+            <!-- link social -->
+            <ul class="m-0 p-0 position-relative">
+                <li class="d-inline-block">
+                    <a class="footer-text social  rounded-circle text-center align-center"
+                        href="https://github.com/CosimoA" target="_blank" rel="noopener" title="My-Email">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a class="footer-text social  rounded-circle text-center align-center"
+                        href="https://linkedin.com/in/cosimoarchi" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- FINE footer -->
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

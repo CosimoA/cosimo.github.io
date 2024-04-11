@@ -1,0 +1,300 @@
+/* GENERAL */
+:root {
+    --primary: rgb(44, 106, 230);
+    --secondary: rgb(255, 255, 255);
+    --text: #262626;
+    --bg-nav: rgba(255, 255, 255, 0.2);
+    --blur-filter: blur(20px);
+    --bg-jumbo: rgba(146, 182, 255, 0.8);
+    --bg-cards: rgb(245, 243, 243);
+    --shadow: 0px 2px 14px 5px rgba(0, 0, 0, 0.2);
+    --text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    --box-shadow: 0px 0px 12px rgba(160, 192, 255, 0.5);
+    color: rgba(34, 79, 170, 0.2);
+    color: #e0e0e0;
+    color: rgb(43, 43, 43);
+    color: rgb(100, 150, 255);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-margin-bottom: -300px;
+    transition: all 0.3s;
+    overflow-x: none;
+}
+
+.bg-card {
+    background-color: var(--bg-cards);
+}
+
+.border-color {
+    border: 1px solid var(--bg-cards);
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--text) !important;
+}
+
+main section {
+    padding: 100px 0;
+    scroll-margin-bottom: -300px
+}
+
+main section>h2 {
+    color: var(--primary);
+    font-size: 2.3em;
+}
+
+img {
+    object-fit: cover;
+}
+
+li {
+    list-style: none;
+}
+
+.git a,
+.curriculum a {
+    border-radius: 40px;
+    font-size: 1.5em;
+    transition: all 0.3s;
+    color: var(--text) !important;
+    height: 70px;
+    width: 300px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+}
+
+
+.git a:hover,
+.curriculum a:hover {
+    cursor: pointer;
+    background-color: var(--primary) !important;
+    color: var(--secondary) !important;
+    box-shadow: var(--shadow);
+}
+
+.change-border {
+    transition: all 0.3s linear !important;
+}
+
+.change-border:hover {
+    border: 1px solid var(--primary) !important;
+    box-shadow: var(--shadow);
+}
+
+/* HEADER */
+header {
+    background-image: url(../img/jumboCover.webp);
+    background-size: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+}
+
+.dark-mode {
+    cursor: pointer;
+}
+
+/* header fixed */
+.header-links {
+    position: fixed;
+    z-index: 1;
+    background-color: var(--bg-nav);
+    backdrop-filter: var(--blur-filter);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-page {
+    display: inline-block;
+    transition: all 0.3s !important;
+    color: var(--secondary) !important;
+    position: relative;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+
+}
+
+.link-page:hover {
+    bottom: 3px;
+    scale: 1.2;
+    color: var(--primary) !important;
+    filter: invert(100%)!important;
+    transition: all 0.1s !important;
+}
+
+
+/* jumbotron */
+#jumbotron {
+    height: 100vh;
+    backdrop-filter: var(--blur-filter);
+    background-color: var(--bg-jumbo);
+    transition: all 0.3s !important;
+}
+
+#jumbotron h1 {
+    font-size: 4em;
+}
+
+.my-name h1,
+.my-name h2 {
+    color: var(--secondary);
+    transition: all 0.3s !important;
+    text-shadow: var(--text-shadow);
+}
+
+.socials-jumbo a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--secondary);
+    color: var(--secondary) !important;
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s !important;
+}
+
+
+.socials-jumbo a:hover {
+    background-color: var(--secondary);
+    color: var(--primary) !important;
+    scale: 1.1;
+    transition: all 0.15s !important;
+}
+
+.photo-jumbo {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    margin-left: 8rem;
+    animation: revealText 1.5s linear;
+    box-shadow: var(--box-shadow);
+}
+
+
+/* MAIN */
+main {
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+.direction {
+    height: 50px;
+    width: 100%;
+}
+
+.direction a {
+    color: var(--secondary) !important;
+    top: -69%;
+    background-color: var(--bg-nav) !important;
+    padding: 0 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+/* about me */
+.cornice {
+    width: 500px;
+    height: 450px;
+}
+
+.my-clouds {
+    display: flex;
+}
+
+/* skills */
+.devicon {
+    font-size: 2rem;
+}
+
+.devicon-img {
+    width: 30px;
+    object-fit: cover;
+}
+
+/* project */
+.img-proj {
+    overflow: hidden;
+    height: 300px;
+}
+
+.img-proj>img {
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.buttons-proj>a {
+    display: inline-block;
+    padding: 4rem 4rem;
+    width: 250px;
+    border-radius: 25px;
+    scale: 1.1;
+    border: 1px solid var(--primary);
+    box-shadow: var(--box-shadow);
+}
+
+.buttons-proj>a:first-child {
+    color: var(--primary);
+}
+
+.mini-git:hover {
+    color: white !important;
+    background-color: var(--primary);
+}
+
+.collapse .card {
+    color: var(--text);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary);
+    z-index: 2;
+}
+
+.footer-link {
+    color: var(--text);
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.footer-link:hover {
+    box-shadow: inset 0px -2px 0px 0px var(--primary)
+}
+
+.social {
+    margin-right: 10px;
+}
+
+.footer-text {
+    color: var(--secondary) !important;
+}
+
+.skill-card{
+    min-height: 500px;
+}
+
+.buttons-proj i{
+    font-size: 20px;
+}
